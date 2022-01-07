@@ -17,9 +17,9 @@ export default function Home() {
 			<div className="p-6 w-full">
 				{data?.languages ? (
 					<Table data={data} />
-				) : (
+				) : data?.message ? (
 					<h2 className="mx-auto text-2xl text-red-500">{data?.message} Try Another Organization</h2>
-				)}
+				) : null}
 			</div>
 		</>
 	);
