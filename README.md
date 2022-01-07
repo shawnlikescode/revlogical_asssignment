@@ -64,7 +64,6 @@ Project should now be functional.
 │   ├── Search-test.js
 │   └── Table-test.js
 ├── components
-│   ├── Button.jsx
 │   ├── Search.jsx
 │   └── Table.jsx
 ├── jest.config.js
