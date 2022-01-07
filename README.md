@@ -87,6 +87,12 @@ Project should now be functional.
 └── yarn.lock
 ```
 
+## Running Tests
+
+To run the tests, simply enter run `yarn test or npm run test`
+
+Jest will walk you through the rest.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
