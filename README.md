@@ -16,7 +16,7 @@ Your app should have:
 
 ## Getting Started
 
-First, clone this Repo to the desired directory `git clone https://github.com/shawnlikescode/revlogical_asssignment`.
+First, clone this Repo to the desired directory `git clone https://github.com/shawnlikescode/revlogical_asssignment.git`.
 
 The node_modules for this project have been gitignored. Will you need to run `yarn or npm`
 to ensure you have all the necessary dependencies.
