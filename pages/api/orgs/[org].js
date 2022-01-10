@@ -35,6 +35,7 @@ export default async function handler(req, res) {
 			})
 		);
 		const count = countLanguages(languages);
+		console.log(count);
 		const merged = {
 			...data,
 			languages: count,
@@ -46,18 +47,11 @@ export default async function handler(req, res) {
 }
 
 function countLanguages(languages) {
-	let count = {};
-	let languagesArray = [];
-	for (let i = 0; i < languages.length; i++) {
-		for (let key in languages[i]) {
+	const count = languages.reduce((count, language) => {
+		for (let key in language) {
 			count[key] = (count[key] ?? 0) + 1;
 		}
-	}
-	for (let key in count) {
-		languagesArray.push({
-			name: key,
-			count: count[key],
-		});
-	}
-	return languagesArray;
+		return count;
+	}, {});
+	return Object.entries(count).map(([key, value]) => ({ name: key, count: value }));
 }
